@@ -7,3 +7,11 @@ request.setEntity(new InputStreamEntity(new FileInputStream(f)
 CloseableHttpResponse res = client.execute(request)
 String resCode = res.getStatusLine().getStatusCode()
 String response = EntityUtils.toString(res.getEntity(),"UTF-8")
+
+
+Refer:
+
+Httpclient 4.4.1
+Httpcore 4.4.1
+Commons codec 1.9
+Commons logging 1.2
