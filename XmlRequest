@@ -1,1 +1,6 @@
-
+File f = new File("XmlRequest")
+CloseableHttpClient client = HttpClient.createDefault()
+HttpPost request = new HttpPost ("Endpointurl")
+request.addHeader("Content-Type","text/xml")
+request.setHeader("soapaction","")
+request.setEntity(new InputStreamEntity(new FileInputStream(f)
